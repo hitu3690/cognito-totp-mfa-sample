@@ -39,8 +39,6 @@ login = function () {
       authenticationData
     );
 
-    console.log(authenticationDetails);
-
     // Cognitoに認証を要求
     cognitoUser.authenticateUser(authenticationDetails, {
       onSuccess: function (result) {
